@@ -1,0 +1,46 @@
+{
+  "name": "gen-secure-password",
+  "version": "1.0.0",
+  "description": "generate secure password using CryptoJS",
+  "main": "libs/index.js",
+  "keywords": [
+    "gen-secure-password",
+    "crypto",
+    "encrypting",
+    "hash",
+    "password",
+    "secure password",
+    "store secure password"
+  ],
+  "directories": {
+    "libs": "libs"
+  },
+  "scripts": {
+    "test": "jest -- tests --verbose=true"
+  },
+  "author": "Tobok Sitanggang <mrbontor@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/mrbontor/gen-secure-password.git/issues",
+    "email": "mrbontor@gmail.com"
+  },
+  "homepage": "https://github.com/mrbontor/gen-secure-password.git#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.4.2",
+    "sinon": "^15.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "./libs/securePasword.js",
+      "./libs/securePaswordUtils.js",
+      "./libs/stringCoverter.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 90
+      }
+    }
+  }
+}

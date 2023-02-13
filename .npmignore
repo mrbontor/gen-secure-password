@@ -1,0 +1,7 @@
+**/node_modules
+**/coverage
+**.git/
+.prettierignore
+.prettierrc.json
+.editorconfig
+.github
